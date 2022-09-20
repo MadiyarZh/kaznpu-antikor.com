@@ -1,0 +1,16 @@
+footer {
+    background: #086D7F;
+
+    .footer-bottom {
+        border-top: 1px solid rgb(255,255,255);
+        border-bottom: 1px solid rgb(255,255,255);
+
+        h4 {
+            padding-top: 17.33333px;
+            padding-bottom: 17.33333px;
+            color: $color--white;
+            font-weight: 400;
+            font-size: 0.875rem;
+        }
+    }
+}

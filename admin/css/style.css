@@ -1,0 +1,322 @@
+/*= ОБЩИЕ СТИЛИ
+	--------------------------------------------------------*/
+body {
+  background: #fff;
+  font-family: "Montserrat",Verdana,sans-serif;
+  color: #0f5132;
+}
+
+header {
+  padding: 30px 0px 20px;
+  box-shadow: 0px 5px 10px -11px #000;
+}
+
+.right-side .nav-item {
+  padding: 10px;
+}
+
+.icon-user {
+  font-size: 21px;
+}
+
+.nav-link {
+  padding: 0px;
+  color: #0f5132;
+}
+
+.nav-link:hover {
+  color: #777 !important;
+}
+
+.main .page {
+  padding: 40px 0px;
+}
+
+#file-upload {
+  margin-top: 1rem;
+}
+
+#file-upload::file-selector-button {
+  font-weight: bold;
+  color: dodgerblue;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+}
+
+a {
+  color: var(--bs-link-color);
+  font-weight: 400;
+}
+
+span {
+  font-weight: 300;
+  /* color: #f58220; */
+}
+
+.mlogin {
+  margin: 20px auto 0;
+}
+
+.mregister {
+  margin: 80px auto 0;
+}
+
+.error {
+  margin: 40px auto 0;
+  border: 1px solid #777;
+  padding: 3px;
+  color: #fff;
+  text-align: center;
+  width: 650px;
+  background: #f58220;
+}
+
+.regtext {
+  font-size: 13px;
+  margin-top: 26px;
+  color: #777;
+}
+
+#welcome {
+  width: 500px;
+  padding: 30px;
+  background: #fff;
+  margin: 160px auto 0;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+  box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.container #login h1 {
+  color: #777;
+  text-align: center;
+  font-weight: 300;
+  border: 1px dashed #777;
+  margin-top: 13px;
+}
+
+.container label {
+  color: #777;
+  font-size: 14px;
+  width: 100%;
+}
+
+#login {
+  width: 320px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.container form .input,.container input[type=text],.container input[type=password],.container input[type=e],.container input[type=date] {
+  background: #fbfbfb;
+  font-size: 24px;
+  line-height: 1;
+  width: 100%;
+  padding: 3px;
+  margin: 0 6px 5px 0;
+  outline: none;
+  border: 1px solid #d9d9d9;
+}
+
+.description-of-file div {
+  width: calc(50% - 15px);
+}
+
+#descriptionRu,
+#descriptionKaz {
+  background: #fbfbfb;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 10px !important;
+  width: 100%;
+}
+
+.container form .input:focus {
+  border: 1px solid #f58220;
+  -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+  -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+  box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+/*= КНОПКИ
+--------------------------------------------------------*/
+
+.button{
+  border: solid 1px #da7c0c;
+  background: #f78d1d;
+  background: -webkit-gradient(linear, left top, leftbottom, from(#faa51a), to(#f47a20));
+  background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+  color: #fff;
+  padding: 7px 12px;
+  -webkit-border-radius:4px;
+  moz-border-radius:4px;
+  border-radius:4px;
+  float: right;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: #f47c20;
+  background: -webkit-gradient(linear, left top, leftbottom, from(#f88e11), to(#f06015));
+  background: -moz-linear-gradient(top,  #f88e11, #f06015);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+/*= ПОДВАЛ
+--------------------------------------------------------*/
+footer {
+  color: #777;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+#login .alert {
+  font-size: 13px;
+}
+
+.site-footer h6 {
+  font-family: "Montserrat",Verdana,sans-serif;
+}
+
+.results_table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.results_table td, .results_table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+/* .results_table tr:nth-child(even) {
+  background-color: #dddddd;
+} */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 40px 25px 20px;
+  border: 1px solid #888;
+  width: 70%;
+}
+
+.file-upload {
+  width: max-content !important;
+  cursor: pointer;
+}
+
+.modal-content label {
+  margin: 10px 0px 10px;
+}
+
+.modal-content .date-of-file,
+.modal-content .name-of-file,
+.update-form .date-of-file,
+.update-form .name-of-file,
+.description-of-file {
+  display: flex;
+  gap: 30px;
+}
+
+.modal-content .date-of-file div,
+.modal-content .name-of-file div,
+.update-form .date-of-file div,
+.update-form .name-of-file div  {
+  width: 100%;
+}
+
+
+.modal-content .date-of-file div input,
+.modal-content .name-of-file div input,
+.update-form .date-of-file div input,
+.update-form .name-of-file div input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-content input {
+  margin: 0 0px 20px 0 !important;
+}
+
+input.file-name {
+  font-size: 17px !important;
+  padding: 10px 10px !important;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  font-size: 17px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  width: max-content;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: #198754;
+  border: 1px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
